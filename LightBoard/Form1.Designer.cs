@@ -67,7 +67,7 @@
             groupBox1.Controls.Add(bulb1);
             groupBox1.Location = new Point(12, 67);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(577, 238);
+            groupBox1.Size = new Size(385, 154);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Визуализация";
@@ -75,18 +75,18 @@
             // bulb3
             // 
             bulb3.BorderStyle = BorderStyle.FixedSingle;
-            bulb3.Location = new Point(386, 26);
+            bulb3.Location = new Point(258, 26);
             bulb3.Name = "bulb3";
-            bulb3.Size = new Size(185, 206);
+            bulb3.Size = new Size(120, 120);
             bulb3.TabIndex = 2;
             bulb3.TabStop = false;
             // 
             // bulb2
             // 
             bulb2.BorderStyle = BorderStyle.FixedSingle;
-            bulb2.Location = new Point(196, 26);
+            bulb2.Location = new Point(132, 26);
             bulb2.Name = "bulb2";
-            bulb2.Size = new Size(184, 206);
+            bulb2.Size = new Size(120, 120);
             bulb2.TabIndex = 1;
             bulb2.TabStop = false;
             // 
@@ -95,14 +95,14 @@
             bulb1.BorderStyle = BorderStyle.FixedSingle;
             bulb1.Location = new Point(6, 26);
             bulb1.Name = "bulb1";
-            bulb1.Size = new Size(184, 206);
+            bulb1.Size = new Size(120, 120);
             bulb1.TabIndex = 0;
             bulb1.TabStop = false;
             // 
             // btnNextSignal
             // 
             btnNextSignal.Enabled = false;
-            btnNextSignal.Location = new Point(12, 311);
+            btnNextSignal.Location = new Point(12, 227);
             btnNextSignal.Name = "btnNextSignal";
             btnNextSignal.Size = new Size(190, 29);
             btnNextSignal.TabIndex = 3;
@@ -114,13 +114,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(602, 381);
+            ClientSize = new Size(410, 268);
             Controls.Add(btnNextSignal);
             Controls.Add(groupBox1);
             Controls.Add(lblResult);
             Controls.Add(btnCalculate);
             Name = "Form1";
-            Text = "Form1";
+            Text = "LightBoard";
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)bulb3).EndInit();
             ((System.ComponentModel.ISupportInitialize)bulb2).EndInit();
