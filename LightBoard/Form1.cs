@@ -9,7 +9,7 @@ namespace LightBoard
 
     public partial class Form1 : Form
     {
-        
+        private int currentSignalIndex = 0;
 
         public Form1()
         {
@@ -46,6 +46,29 @@ namespace LightBoard
             }
 
             lblResult.Text = $"Для {signalsNeeded} сигналов нужно {bulbs} лампочки (комбинаций: {currentCombinations})";
+        }
+
+        private void btnNextSignal_Click(object sender, EventArgs e)
+        {
+            if (currentSignalIndex >= 18) currentSignalIndex = 0;
+
+            int temp = currentSignalIndex;
+
+            int state1 = temp % 3;
+            temp /= 3;
+
+            int state2 = temp % 3;
+            temp /= 3;
+
+            int state3 = temp % 3;
+
+            DrawBulb(bulb1, (BulbState)state1);
+            DrawBulb(bulb2, (BulbState)state2);
+            DrawBulb(bulb3, (BulbState)state3);
+
+            lblResult.Text = $"Сигнал № {currentSignalIndex}";
+
+            currentSignalIndex++;
         }
     }
 }

@@ -108,6 +108,7 @@
             btnNextSignal.TabIndex = 3;
             btnNextSignal.Text = "Следующий сигнал";
             btnNextSignal.UseVisualStyleBackColor = true;
+            btnNextSignal.Click += btnNextSignal_Click;
             // 
             // Form1
             // 
