@@ -31,6 +31,14 @@
             btnCalculate = new Button();
             lblResult = new Label();
             groupBox1 = new GroupBox();
+            bulb3 = new PictureBox();
+            bulb2 = new PictureBox();
+            bulb1 = new PictureBox();
+            btnNextSignal = new Button();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)bulb3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bulb2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bulb1).BeginInit();
             SuspendLayout();
             // 
             // btnCalculate
@@ -54,23 +62,68 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(bulb3);
+            groupBox1.Controls.Add(bulb2);
+            groupBox1.Controls.Add(bulb1);
             groupBox1.Location = new Point(12, 67);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(370, 238);
+            groupBox1.Size = new Size(577, 238);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Визуализация";
+            // 
+            // bulb3
+            // 
+            bulb3.BorderStyle = BorderStyle.FixedSingle;
+            bulb3.Location = new Point(386, 26);
+            bulb3.Name = "bulb3";
+            bulb3.Size = new Size(185, 206);
+            bulb3.TabIndex = 2;
+            bulb3.TabStop = false;
+            // 
+            // bulb2
+            // 
+            bulb2.BorderStyle = BorderStyle.FixedSingle;
+            bulb2.Location = new Point(196, 26);
+            bulb2.Name = "bulb2";
+            bulb2.Size = new Size(184, 206);
+            bulb2.TabIndex = 1;
+            bulb2.TabStop = false;
+            // 
+            // bulb1
+            // 
+            bulb1.BorderStyle = BorderStyle.FixedSingle;
+            bulb1.Location = new Point(6, 26);
+            bulb1.Name = "bulb1";
+            bulb1.Size = new Size(184, 206);
+            bulb1.TabIndex = 0;
+            bulb1.TabStop = false;
+            // 
+            // btnNextSignal
+            // 
+            btnNextSignal.Enabled = false;
+            btnNextSignal.Location = new Point(12, 311);
+            btnNextSignal.Name = "btnNextSignal";
+            btnNextSignal.Size = new Size(190, 29);
+            btnNextSignal.TabIndex = 3;
+            btnNextSignal.Text = "Следующий сигнал";
+            btnNextSignal.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(394, 317);
+            ClientSize = new Size(602, 381);
+            Controls.Add(btnNextSignal);
             Controls.Add(groupBox1);
             Controls.Add(lblResult);
             Controls.Add(btnCalculate);
             Name = "Form1";
             Text = "Form1";
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)bulb3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bulb2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bulb1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -80,5 +133,9 @@
         private Button btnCalculate;
         private Label lblResult;
         private GroupBox groupBox1;
+        private PictureBox bulb3;
+        private PictureBox bulb2;
+        private PictureBox bulb1;
+        private Button btnNextSignal;
     }
 }
