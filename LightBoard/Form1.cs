@@ -14,6 +14,10 @@ namespace LightBoard
         public Form1()
         {
             InitializeComponent();
+
+            DrawBulb(bulb1, BulbState.Off);
+            DrawBulb(bulb2, BulbState.Off);
+            DrawBulb(bulb3, BulbState.Off);
         }
 
         private void DrawBulb(PictureBox pb, BulbState state)
@@ -46,6 +50,9 @@ namespace LightBoard
             }
 
             lblResult.Text = $"Для {signalsNeeded} сигналов нужно {bulbs} лампочки (комбинаций: {currentCombinations})";
+
+            btnNextSignal.Enabled = true;
+            currentSignalIndex = 0;
         }
 
         private void btnNextSignal_Click(object sender, EventArgs e)
