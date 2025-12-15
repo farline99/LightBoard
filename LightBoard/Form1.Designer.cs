@@ -41,6 +41,7 @@
             btnCalculate.TabIndex = 0;
             btnCalculate.Text = "Рассчитать";
             btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // lblResult
             // 
